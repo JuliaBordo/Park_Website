@@ -1,0 +1,17 @@
+/* Resets --------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #431d8c;
+    color: whitesmoke;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
