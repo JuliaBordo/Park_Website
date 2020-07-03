@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+    } 
+        body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content 1fr;
+    }
+    main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+main > article {
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Pink Paper</h1><h2>It's Salmon Actually</h2>
+      </header>
+      <nav><ul>
+        <li><a href="#article1">Article 1</a></li>
+        <li><a href="#article2">Article 2</a></li>
+        <li><a href="#article3">Article 3</a></li>
+      </ul></nav>
+      <main>
+        <article id="article1">Some content</article>
+        <article id="article2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellendus consequatur sapiente ipsam voluptatum consectetur? Perspiciatis ipsum sed autem exercitationem doloribus cumque. Praesentium culpa, tenetur dicta debitis tempora temporibus delectus?</article>
+        <article id="article3">Some content next</article>
+      </main>
+</body>
+</html>
